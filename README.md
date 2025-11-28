@@ -114,7 +114,7 @@ server {
 
 Now the entire app loads on:
 
-👉 http://<EC2-PUBLIC-IP>
+👉 http://13.235.95.244
 
 ## 4. AWS EC2 Deployment
 EC2 Setup
@@ -141,7 +141,7 @@ sudo docker-compose up -d
 
 Application URL:
 
-👉 http://13.233.83.36/
+👉 http://13.235.95.244
 
 ## 5. GitHub Actions CI/CD Pipeline
 
@@ -203,36 +203,16 @@ jobs:
           sudo docker-compose pull
           sudo docker-compose up -d --force-recreate
 
-## 6. Required Screenshots
-
-Create a folder /screenshots and add:
-
-GitHub repo structure
-
-Docker build images
-
-Docker Hub images
-
-docker ps output
-
-EC2 instance running
-
-Security group ports
-
-Application running on EC2 IP
-
-GitHub Actions pipeline success
-
-Nginx config
-
-Logs showing successful update
-
-## 7. Final URLs to Provide
+## 6. Final URLs 
 
 GitHub repo
-👉
+👉https://github.com/venkat1031/discover-dollar-mean-devops-task
 
 Docker Hub
-👉
+Backend:
+👉https://hub.docker.com/r/venkat1031/mean-backend
+Frontend:
+👉https://hub.docker.com/r/venkat1031/mean-frontend
+
 EC2 Live URL 
-👉http://13.233.83.36/
+👉 http://13.235.95.244
