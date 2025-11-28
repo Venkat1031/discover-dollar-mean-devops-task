@@ -11,7 +11,7 @@ services:
       - mongo_data:/data/db
 
   backend:
-    build: ./backend
+    image: venkat1031/mean-backend:latest
     container_name: mean_backend
     restart: always
     environment:
@@ -22,7 +22,7 @@ services:
       - mongo
 
   frontend:
-    build: ./frontend
+    image: venkat1031/mean-frontend:latest
     container_name: mean_frontend
     restart: always
     ports:
